@@ -7,7 +7,7 @@ const UserForm = () => {
     fileInputRef.current.click();
   };
   return (
-    <form className=" flex gap-8 items-center px-8 py-6">
+    <form className=" flex flex-col md:flex-row gap-8 items-center px-8 py-6">
       <div className="lg:w-[30%] w-full">
         <div className="flex justify-center flex-col items-center">
           <div className="min-h-[10rem] min-w-[10rem] rounded-full border-4 border-gray-200 flex justify-center items-center overflow-hidden"></div>
@@ -43,7 +43,7 @@ const UserForm = () => {
             type="text"
             className="w-[70%] py-2 px-4 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
             name="name"
-            value="naim"
+            value=""
           />
         </div>
         <div className="flex w-full gap-4">
@@ -57,7 +57,7 @@ const UserForm = () => {
             type="text"
             className="w-[70%] py-2 px-4 rounded-lg border border-gray-300 bg-gray-100 text-gray-500 cursor-not-allowed"
             disabled=""
-            value="naim@gmail.com"
+            value=""
           />
         </div>
         <div className="flex w-full gap-4">
@@ -71,7 +71,7 @@ const UserForm = () => {
             type="text"
             className="w-[70%] py-2 px-4 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
             name="address"
-            value="mirpur"
+            value=""
           />
         </div>
         <div className="flex w-full gap-4">
@@ -85,7 +85,7 @@ const UserForm = () => {
             type="text"
             className="w-[70%] py-2 px-4 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500"
             name="phone"
-            value="4545454"
+            value=""
           />
         </div>
         <div className="flex w-full gap-4">
@@ -99,7 +99,7 @@ const UserForm = () => {
             type="text"
             className="w-[70%] py-2 px-4 rounded-lg border border-gray-300 bg-gray-100 text-gray-500 cursor-not-allowed"
             disabled=""
-            value="admin"
+            value=""
           />
         </div>
         <div className="flex w-full gap-4">
@@ -113,7 +113,7 @@ const UserForm = () => {
             type="text"
             className="w-[70%] py-2 px-4 rounded-lg border border-gray-300 bg-gray-100 text-gray-500 cursor-not-allowed"
             disabled=""
-            value="11 may 2025"
+            value=""
           />
         </div>
       </div>

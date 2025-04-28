@@ -1,12 +1,14 @@
-import Image from "next/image";
+"use client";
+import { useState } from "react";
 import UserProfile from "./../components/userProfile/UserProfile";
 import Header from "@/components/Header/Header";
 
 export default function Home() {
+  const [open, setOpen] = useState(false);
   return (
     <div>
-      <Header />
-      <UserProfile />
+      <Header setOpen={setOpen} open={open} />
+      <UserProfile open={open} />
     </div>
   );
 }

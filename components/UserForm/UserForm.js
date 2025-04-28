@@ -1,25 +1,24 @@
 "use client";
 import React, { useRef } from "react";
-
 const UserForm = () => {
   const fileInputRef = useRef();
   const handleButtonClick = () => {
     fileInputRef.current.click();
   };
   return (
-    <form className=" flex flex-col md:flex-row gap-8 items-center px-8 py-6">
+    <form className=" flex flex-col md:flex-row gap-8 items-center px-8 py-6 relative">
       <div className="lg:w-[30%] w-full">
         <div className="flex justify-center flex-col items-center">
           <div className="min-h-[10rem] min-w-[10rem] rounded-full border-4 border-gray-200 flex justify-center items-center overflow-hidden"></div>
           <input type="file" ref={fileInputRef} style={{ display: "none" }} />
           <button
-            class="mt-2 bg-blue-500 hover:bg-blue-600 text-white rounded-full p-2"
+            className="mt-2 bg-blue-500 hover:bg-blue-600 text-white rounded-full p-2"
             onClick={handleButtonClick}
           >
             <svg
               stroke="currentColor"
               fill="currentColor"
-              stroke-width="0"
+              strokeWidth="0"
               viewBox="0 0 24 24"
               height="20"
               width="20"
